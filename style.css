@@ -14,37 +14,17 @@ padding: 0;
 box-sizing: border-box;
 }
 :root{
-
-    --color-white:
-
-hsl(252, 30%, 100%);
-    --color-light:
-
-hsl(252, 30%, 95%);
-    --color-grey:
-
-hsl(252, 30%, 80%);
-    --color-success:
-
-hsl(120, 72%, 52%);
-    --color-error:
-
-hsl(0, 72%, 52%);
-    --color-dark:
-
-hsl(252, 30%, 20%);
-    --color-lightblue:
-
-hsl(195, 53.3%, 79%);
-    --color-black:
-
-hsl(252, 30%, 0%);
-    --color-primary:
-
-hsl(30, 100%, 50%);
-    --color-secondary:
-
-hsl(60, 90%, 42%);
+    --color-white:hsl(252, 30%, 100%);
+    --color-light:hsl(252, 30%, 95%);
+    --color-grey:hsl(252, 30%, 80%);
+    --color-success:hsl(120, 72%, 52%);
+    --color-error:hsl(0, 72%, 52%);
+    --color-dark:hsl(252, 30%, 20%);
+    --color-lightblue:hsl(195, 53.3%, 79%);
+    --color-black:hsl(252, 30%, 0%);
+    --color-primary:hsl(30, 100%, 50%);
+    --color-secondary: hsl(60, 100%, 50%);
+;
 
     --border-radius: 2rem;
     --card-board-radius: 1rem;
@@ -57,12 +37,6 @@ body{
     color: var(--color-dark);
     background-color: var(--color-lightblue);
     font-family: "Splatoon", sans-serif;
-}
-.logo{
-    width: 2.7rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 li{
@@ -87,6 +61,7 @@ a{
     display: inline-block;
     justify-content: space-between;
     margin-top: 5px;
+    margin-left: 20%;
     margin-bottom: 5px;
 
 }
@@ -100,9 +75,8 @@ a{
 /* Navbar time! */
 .navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--color-white);
     color: var(--color-dark);
 }
@@ -111,7 +85,10 @@ a{
 }
 /*logo*/
 .logo{
-    width:5%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 /*menu*/
 .menu{
@@ -128,9 +105,9 @@ a{
     padding: 5px 14px;
 }
 
-.topics {
+    .topics {
     position: relative; 
-   }
+}
    .dropdown {
     background-color: var(--color-secondary);
     padding: 1em 0;
@@ -138,31 +115,50 @@ a{
     display: none;
     border-radius: 8px;
     top: 35px;
-   }
+}
    .dropdown li + li {
     margin-top: 10px;
-   }
+}
    .dropdown li {
     padding: 0.5em 1em;
     width: 8em;
     text-align: center;
-   }
+}
    .dropdown li:hover {
     background-color: var(--color-primary);
-   }
-   .services:hover .dropdown {
+}
+   .topics:hover .dropdown {
     display: block;
-   }
+}
 /*Respond*/
-input [type="checkbox"]{
-    display: none;
+    input [type="checkbox"]{
+        appearance: none;
 }
-/*hamburger plain*/
-.hamburger{
-    display: none;
+/*hamburger in computer*/
+    .hamburger{
+        display: none;
+        font-size: 15px;
+        user-select: none;
+}
+
+.search{
+    border: var(--color-grey) 10px solid;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: right;
+    margin-left: 63%;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+
+}
+input[type="text"]{
+    border: none;
+    background-color: var(--color-grey);
+    outline: none;
     font-size: 15px;
-    user-select: none;
+    width: 100%;
 }
+
 /*Media query*/
 @media screen and (max-width: 768px){
     .menu{
@@ -181,9 +177,6 @@ input [type="checkbox"]{
 }
     .menu li+li{
         margin-top: 12px;
-}
-    input[type=checkbox]:checked ~ .menu{
-        display: block;
 }
     .hamburger{
         display: block;
