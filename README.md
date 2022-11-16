@@ -6,7 +6,7 @@ A Twitter-like parody for the Splatoon community
 There is alot of tasks needed for this stuff, which includes:
 
 * UI updating
-* Updating Search Bar in navbar
+* Users posting status
 * Profile picture and page
 * Login (Although, I'm probably doing that myself)
 * All Backend-Functionality
