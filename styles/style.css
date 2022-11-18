@@ -255,4 +255,39 @@ a{
     font-size: 15px;
     width: 100%;
 }
-
+/*Files?*/
+.filepic{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+.file-upload{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10%;
+}
+.file-upload input[type="file"]{
+    display: none;
+}
+/*Post*/
+.make{
+    /*move make to the right side*/
+    margin-left: 70%;
+    margin-top: 10px;
+    border: var(--color-lightblue) 10px solid;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: justify;
+    background-color: var(--color-lightblue);
+    color: var(--color-dark);
+    width:10%;
+}
+.make-post{
+    border: none;
+    background-color: var(--color-lightblue);
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
