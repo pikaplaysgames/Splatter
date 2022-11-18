@@ -8,11 +8,7 @@
     url("/fontstyle/splatoon2-webfont.svg") format("svg");
 }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+*{margin: 0;padding: 0;box-sizing: border-box;}
 :root{
     --color-white:hsl(252, 30%, 100%);
     --color-light:hsl(252, 30%, 95%);
@@ -26,7 +22,7 @@ box-sizing: border-box;
     --color-secondary: hsl(60, 100%, 50%);
 ;
 
-    --border-radius: 2rem;
+    --border-radius: 1rem;
     --card-board-radius: 1rem;
     --btn-padding: .6rem 2rem;
     --search-padding: .6rem 1rem;
@@ -140,7 +136,6 @@ a{
         font-size: 15px;
         user-select: none;
 }
-
 .search{
     border: var(--color-grey) 10px solid;
     border-radius: var(--border-radius);
@@ -151,7 +146,7 @@ a{
     color: var(--color-dark);
 
 }
-input[type="text"]{
+.search-bar{
     border: none;
     background-color: var(--color-grey);
     outline: none;
@@ -175,7 +170,11 @@ input[type="text"]{
         background-color: var(--color-primary);
         transition: .3s ease;
 }
-    .menu li+li{
+    .hamburger:hover .menu{
+        display: block;
+}
+    
+        .menu li+li{
         margin-top: 12px;
 }
     .hamburger{
@@ -194,3 +193,66 @@ input[type="text"]{
         margin: 0 auto;
     }
 }
+
+/*posting area*/
+.post-area{
+    text-align: center;
+    width: 50%;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:25%;
+    margin-right:25%;
+    padding: 10px;
+    display:inline-block;
+}
+.post{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.profile-picture{
+    margin-right: 3%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.pp{
+
+    margin-right:100px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-text{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 15%;
+    object-fit: cover;
+}
+
+.post-text{
+    border: var(--color-white) 10px solid;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: justify;
+    /* margin-left: 10%; */
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    width:75%;
+}
+.type{
+    border: none;
+    background-color: var(--color-white);
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
+
