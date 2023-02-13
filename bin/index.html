@@ -26,7 +26,8 @@
                                     <li><a href="/">Art</a></li>
                                 </ul>
                             </li>
-                    </div>
+                            <li><a href="./login.html">Login</a></li>
+                        </div>
                 </ul>
         <!--Make a search bar with the placeholder "Search"-->
         <div class="search">
@@ -44,13 +45,20 @@
                     <input type="text" placeholder="What's on your mind?" class="type">
                     </div>
             </div>
+        <div class="bottom">   
         <div class="file-upload">
             <input id="file-upload" class="file-upload" type="file" name="file-upload">
             <label for="file-upload"><img src="../images-placeholders/document.png" alt="click for file upload" class="filepic"></label>
-            <div class="make">
-                <button class="make-post"><p>Post</p></button>
-            </div>
+        </div>
+        <div class="make">
+        <input type="submit" value="Post" class="make-post" onclick="Post()">
+        </div>
         </div>
     </div>
+
+    <div class="if">
+    
+    </div>
+    <script type="text/javascript" src="./code/NewPost.js"></script>
 </body>
 </html>

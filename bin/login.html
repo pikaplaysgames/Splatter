@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login-Splatter[Alpha]</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../styles/login.css">
+</head>
+    <body>
+        <div class = "login">
+            <div class = "login-box">
+                <div class = "button-box">
+                    <div id = "btn"></div>
+                    <button type = "button" class = "toggle-btn" onclick = "login()">Login</button>
+                    <button type = "button" class = "toggle-btn" onclick = "register()">Register</button>
+                    <div class = "social">
+                        <a href = "#"><img src = "../images-placeholders/google.png"></a>
+                    </div>
+                </div>
+                <div id="login" class = "input">
+                    <input type = "text" class = "input-field" placeholder = "Username" required>
+                    <input type = "password" class = "input-field" placeholder = "Password" required>
+                    <input type = "checkbox" class = "check-box"><span>Remember Password</span>
+                    <button type = "submit" class = "submit-btn">Login</button>
+
+                </div>
+                <div id= "register" class = "input">
+                    <input type = "text" class = "input-field" placeholder = "Username" required>
+                    <input type = "email" class = "input-field" placeholder = "Email" required>
+                    <input type = "text" class = "input-field" placeholder = "Password" required>
+                    <input type = "checkbox" class = "check-box"><span>I Agree with the Terms</span>
+                    <button type = "submit" class = "submit-btn">Register!</button>
+
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./code/login.js">
+    </script>
+</html>
